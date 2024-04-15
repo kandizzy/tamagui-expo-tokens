@@ -26,7 +26,29 @@ const tokens = createTokens({
 
 export const config = createTamagui({
   ...configBase,
-  tokens,
+  tokens: {
+    ...configBase.tokens,
+    size: {
+      ...configBase.tokens.size,
+      ...tokens.size,
+    },
+    space: {
+      ...configBase.tokens.space,
+      ...tokens.space,
+    },
+    radius: {
+      ...configBase.tokens.radius,
+      ...tokens.radius,
+    },
+    color: {
+      ...configBase.tokens.color,
+      ...tokens.color,
+    },
+    zIndex: {
+      ...configBase.tokens.zIndex,
+      ...tokens.zIndex,
+    },
+  },
 });
 
 export type Conf = typeof config;

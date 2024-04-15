@@ -1,4 +1,4 @@
-Example with error: 
+# Example with error: 
 
 ```
 (base) user@computer tamagui-expo-tokens % npm start
